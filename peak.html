@@ -1,0 +1,94 @@
+			
+			<div id="map-wrapper">
+
+				<section id="map"></section>
+
+				<div id="title-wrapper">
+					<span class="logo-small-dark"></span>
+					<h2></h2>
+				</div>
+
+
+				<div id="options-wrapper">
+
+					<nav id="map-options">
+						<ul>
+						<li id="map-option-routes" title="Routes" title="Routes"></li>
+						<li id="map-option-landmarks" title="Landmarks" title="Landmarks"></li>
+						<li id="map-option-overrides" title="Override Options" title="Override Options"></li>
+						</ul>
+					</nav>
+
+					<section id="options">
+
+						<section id="option-routes" class="map-option-routes">
+							<ul>
+								<li id="new-route" title="Create a New Route"><span class="icon-plus"></span><p>New Route</p></li>
+							</ul>
+						</section>
+
+						<section id="option-landmarks" class="map-option-landmarks">
+							<ul>
+								<li id="add-landmark" title="Add Landmark to Current Route"><span class="icon-plus"></span><p>Add Landmark</p></li>
+							</ul>
+						</section>
+
+						<section id="option-overrides" class="map-option-overrides">
+								<ul>
+									<li><label for="x-interval">X-Axis-Interval</label>
+										<select id="x-interval">
+											<option value="200">200m</option>
+											<option value="1000">1km</option>
+										</select>
+									</li>
+									<li><label for="x-gap">X-Axis-Gap</label><input type="text" id="x-gap" value="0" /></li>
+									<li><label for="x-start">X-Axis-Start</label><input type="text" id="x-start" value="0" /></li>
+									<li><label for="x-finish">X-Axis-Finish</label><input type="text" id="x-finish"  value="0" /></li>
+
+									<li><label for="y-interval">Y-Axis-Interval</label>
+										<select id="y-interval" >
+											<option value="20">20m</option>
+											<option value="50">50m</option>
+											<option value="100">100m</option>
+										</select>
+									</li>
+									<li><label for="y-gap">Y-Axis-Gap</label><input type="text" id="y-gap" value="0" /></li>
+									<li><label for="y-start">Y-Axis-Start</label><input type="text" id="y-start" value="0" /></li>
+									<li><label for="y-finish">Y-Axis-Finish</label><input type="text" id="y-finish" value="0" /></li>
+									<li id="refresh-overrides">
+										<div>
+											<span class="icon-refresh"></span>
+											<p>Refresh</p>
+										</div>
+									</li>
+								</ul>
+						</section>
+
+					</section>
+
+				</div>
+	
+				<div id="info-wrapper">
+
+					<nav id="map-info">
+						<ul><li id="map-info-gradient" title="Gradient Chart"></li></ul>
+					</nav>
+
+					<section id="info">
+						<nav>
+							<ul>
+							<li id="gradient-max-min"><span class="icon-max-min" title="Maximise/Minimise"></span></li>
+							<li id="gradient-zoom"><span class="icon-zoom-out" title="Zoom"></span></li>
+							<li id="to-png-light-on-dark"><span class="icon-light-on-dark" title="Export to .PNG (Light on Dark)"></span></li>
+							<li id="to-png-dark-on-light"><span class="icon-dark-on-light" title="Export to .PNG (Dark on Light)"></span></li>
+							</ul>
+						</nav>
+						<section id="av-gradients">
+							<canvas id="gradient-chart" width="440px" height="358px"></canvas>
+						</section>
+
+					</section>
+
+				</div>
+			
+			</div>
